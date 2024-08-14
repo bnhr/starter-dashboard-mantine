@@ -10,7 +10,7 @@ const AboutPage = lazy(() => import('~/pages/front/about'))
 const HomePage = lazy(() => import('~/pages/front/home'))
 const NotFound = lazy(() => import('~/pages/errors/not-found'))
 const Protected = lazy(() => import('~/pages/auth/protected'))
-const Login = lazy(() => import('~/pages/auth/login'))
+const Login = lazy(() => import('~/pages/auth/login/login'))
 const Admin = lazy(() => import('~/pages/dashboard/admin'))
 const Table = lazy(() => import('~/pages/dashboard/table'))
 
