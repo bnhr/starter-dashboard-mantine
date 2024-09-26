@@ -1,11 +1,11 @@
 import { NavLink } from '@mantine/core'
 import { IconArticle, IconUser } from '@tabler/icons-react'
 
-import { ChildrenProps } from '~/types'
 import Styles from './admin.module.css'
 import Identifier from './identifier/identifier'
+import { Outlet } from 'react-router-dom'
 
-function AdminLayout({ children }: ChildrenProps) {
+function AdminLayout() {
 	return (
 		<div className={Styles.layout}>
 			<aside className={Styles.sidebar}>
@@ -34,7 +34,9 @@ function AdminLayout({ children }: ChildrenProps) {
 				<div></div>
 			</aside>
 			<div className={Styles.content}>
-				<main className={Styles.main}>{children}</main>
+				<main className={Styles.main}>
+					<Outlet />
+				</main>
 			</div>
 		</div>
 	)

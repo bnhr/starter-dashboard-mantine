@@ -4,9 +4,15 @@
   "extends": ["config:base"],
   "packageRules": [
     {
+      "matchPackagePatterns": ["^@mantine"],
+      "groupName": "mantine packages",
+      "groupSlug": "mantine"
+    },
+    {
       "matchUpdateTypes": ["major", "minor", "patch", "digest"],
-      "groupName": "all dependencies",
-      "groupSlug": "all"
+      "excludePackagePatterns": ["^@mantine"],
+      "groupName": "all other dependencies",
+      "groupSlug": "all-others"
     }
   ]
 }

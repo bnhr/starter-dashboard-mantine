@@ -1,11 +1,5 @@
-import AdminLayout from '~/layouts/admin/admin-layout'
-
 function AdminPage() {
-	return (
-		<AdminLayout>
-			<p>admin page</p>
-		</AdminLayout>
-	)
+	return <p>admin page</p>
 }
 
 export default AdminPage

@@ -1,4 +1,7 @@
 /* eslint-disable indent */
+import clsx from 'clsx'
+import { ClassValue } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 import { DMYProps, DateInputProps } from '~/types'
 
 export function truncateText(text: string, length: number) {
@@ -7,6 +10,10 @@ export function truncateText(text: string, length: number) {
 		truncated += '...'
 	}
 	return truncated
+}
+
+export function cn(...inputs: ClassValue[]) {
+	return twMerge(clsx(inputs))
 }
 
 export function stringToDate(str: DateInputProps) {
