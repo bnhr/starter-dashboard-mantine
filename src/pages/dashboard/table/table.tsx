@@ -86,12 +86,11 @@ function TablePage() {
 							{headerGroup.headers.map((header) => (
 								<Table.Th key={header.id}>
 									{header.isPlaceholder
-										? // prettier-ignore
-										null
+										? null
 										: flexRender(
-											header.column.columnDef.header,
-											header.getContext(),
-										)}
+												header.column.columnDef.header,
+												header.getContext(),
+											)}
 								</Table.Th>
 							))}
 						</Table.Tr>
