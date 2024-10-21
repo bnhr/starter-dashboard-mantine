@@ -9,6 +9,11 @@
       "groupSlug": "mantine"
     },
     {
+      "matchPackagePatterns": ["^@tiptap"],
+      "groupName": "tiptap packages",
+      "groupSlug": "tiptapZ"
+    },
+    {
       "matchUpdateTypes": ["major", "minor", "patch", "digest"],
       "excludePackagePatterns": ["^@mantine"],
       "groupName": "all other dependencies",
